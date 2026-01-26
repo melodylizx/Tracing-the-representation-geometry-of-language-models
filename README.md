@@ -39,6 +39,12 @@ python rankme_alpha_scripts/compute_alpha_rankme_olmo2.py \
 ```bash
 python analysis/plot_alpha_traj.py 
 ```
+###  ∞-gram and LLM likelihood analysis
+
+```bash
+python memorization_scripts/compute_infgrams.py
+python memorization_scripts/compute_infgrams.py
+```
 
 ## Repository Structure
 
@@ -46,7 +52,7 @@ python analysis/plot_alpha_traj.py
 ├── analysis/                       # Visualization scripts
 │   └── plot_alpha_traj.py
     └── llm_prob.py     
-├── memorization_scripts/           # N-gram and LLM likelihood analysis
+├── memorization_scripts/           # ∞-gram and LLM likelihood analysis
 │   ├── compute_infgrams.py
 │   └── compute_llm_likelihood.py
 ├── rankme_alpha_scripts/          # Compute geometric metrics
