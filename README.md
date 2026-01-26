@@ -43,7 +43,7 @@ python analysis/plot_alpha_traj.py
 
 ```bash
 python memorization_scripts/compute_infgrams.py
-python memorization_scripts/compute_infgrams.py
+python memorization_scripts/compute_llm_likelihood.py
 ```
 
 ## Repository Structure
