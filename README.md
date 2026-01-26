@@ -24,21 +24,20 @@ pip install torch transformers datasets numpy matplotlib seaborn scikit-learn tq
 ### Compute metrics for Pythia models
 
 ```bash
-python rankme_alpha_scripts/compute_alpha_pythia.py --model_name pythia-410m
+python rankme_alpha_scripts/compute_alpha_pythia.py --model_name EleutherAI/pythia-6.9b
 ```
 
 ### Compute metrics for OLMo models
 
 ```bash
 python rankme_alpha_scripts/compute_alpha_rankme_olmo2.py \
-    --model_name OLMo-1B \
-    --batch_size 32
+    --model_name allenai/OLMo-2-1124-7B 
 ```
 
 ### Visualize results
 
 ```bash
-python analysis/plot_alpha_traj.py --xvar steps
+python analysis/plot_alpha_traj.py 
 ```
 
 ## Repository Structure
@@ -46,6 +45,7 @@ python analysis/plot_alpha_traj.py --xvar steps
 ```
 ├── analysis/                       # Visualization scripts
 │   └── plot_alpha_traj.py
+    └── llm_prob.py     
 ├── memorization_scripts/           # N-gram and LLM likelihood analysis
 │   ├── compute_infgrams.py
 │   └── compute_llm_likelihood.py
@@ -54,8 +54,7 @@ python analysis/plot_alpha_traj.py --xvar steps
 │   ├── compute_rankme_pythia.py
 │   └── compute_alpha_rankme_olmo2.py
 └── utils/
-    ├── powerlaw.py                # Eigenspectrum and metric utilities
-    └── llm_prob.py                # Token probability analysis
+    ├── powerlaw.py                # Eigenspectrum and metric utilities         
 ```
 
 ## Key Metrics
