@@ -93,11 +93,12 @@ Output saved as `.npy` files containing:
 ## Citation
 
 ```bibtex
-@article{li2025tracing,
+@inproceedings{li2025tracing,
   title={Tracing the Representation Geometry of Language Models from Pretraining to Post-training},
-  author={Li, Melody Zixuan and Ghosh, Arna and Kumar, Sham M. and Kawaguchi, Kenji and Precup, Doina and Lajoie, Guillaume and Bengio, Yoshua},
-  journal={arXiv preprint arXiv:2509.23024},
-  year={2025}
+  author={Li, Melody Zixuan and Agrawal, Kumar Krishna and Ghosh, Arna and Teru, Komal Kumar and Santoro, Adam and Lajoie, Guillaume and Richards, Blake A.},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS) 2025},
+  year={2025},
+  url={https://arxiv.org/abs/2509.23024}
 }
 ```
 
